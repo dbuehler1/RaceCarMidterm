@@ -18,5 +18,11 @@ namespace RaceTrack.RaceTrack.Cars
         {
             Console.WriteLine($"The {Name} sputters and pops to life!");
         }
+
+        public override void Brake()
+        {
+            Console.WriteLine($"The {Name} is falling apart while trying to stop!!");
+            base.Brake();
+        }
     }
 }
